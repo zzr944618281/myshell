@@ -1,0 +1,16 @@
+$0 获取当前执行的shell脚本的文件名，包括路劲信息
+$n 获取当前shell脚本的第n个参数值，当n为0时表示脚本文件名
+$# 获取当前shell命令行中参数的总格式用户
+$? 获取执行上一个指令的返回值(0为成功，非零为失败)
+
+bash内部变量
+man bash 查看bash内部变量
+
+bash内部命令
+which cd 查不到cd
+cd 是bash内部命令
+
+echo >> file    追加到文件结尾
+echo > file
+
+
