@@ -1,0 +1,22 @@
+git init			//建立仓库
+git status			//查看本地和临时区发生什么改变
+git diff readme.txt 	//具体到哪一行发生什么变化
+git add readme.txt		//把readme.txt从本地加到临时区
+git commit -m "add distributed"	//把临时区加到本地仓库
+git push origin master			//把本地仓库push到远程仓库
+
+删除：
+rm test.txt
+git rm test.txt         		//把删除文件弄到临时区，此时可以push也可以checkout恢复到原来的版本
+git checkout -- test.txt        //用版本库里的版本替换工作区的版本，可以一键还原工作区的文件
+
+修改：
+git diff HEAD -- readme.txt     //查看工作区和版本库里面最新版本的区别
+
+第一次：
+git push -u origin master				//第一次push
+ssh-keygen -t rsa -C "youremail@example.com"		//生成密钥
+git remote add origin git@github.com:michaelliao/learngit.git  
+//关联起来对应的远程仓库
+git clone git@github.com:michaelliao/gitskills.git
+
